@@ -189,8 +189,7 @@ export const App = () => {
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-end p-6">
-        </div>
+        <div className="flex justify-end p-6"></div>
         <ul className="flex flex-col items-center justify-center space-y-6 text-xl h-full -mt-20">
           <li>
             <NavLink
@@ -262,7 +261,7 @@ export const App = () => {
               <li>
                 <button
                   onClick={() => handleNavigation("home")}
-                  className="hover:text-blue-300 transition-colors duration-300"
+                  className="hover:text-blue-300 transition-colors duration-300 bg-transparent"
                 >
                   Home
                 </button>
@@ -270,7 +269,7 @@ export const App = () => {
               <li>
                 <button
                   onClick={() => handleNavigation("about")}
-                  className="hover:text-blue-300 transition-colors duration-300"
+                  className="hover:text-blue-300 transition-colors duration-300 bg-transparent"
                 >
                   About Us
                 </button>
@@ -278,7 +277,7 @@ export const App = () => {
               <li>
                 <button
                   onClick={() => handleNavigation("programs")}
-                  className="hover:text-blue-300 transition-colors duration-300"
+                  className="hover:text-blue-300 transition-colors duration-300 bg-transparent"
                 >
                   Programs
                 </button>
@@ -286,7 +285,7 @@ export const App = () => {
               <li>
                 <button
                   onClick={() => handleNavigation("contact")}
-                  className="hover:text-blue-300 transition-colors duration-300"
+                  className="hover:text-blue-300 transition-colors duration-300 bg-transparent"
                 >
                   Contact
                 </button>
