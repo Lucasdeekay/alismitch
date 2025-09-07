@@ -7,7 +7,7 @@ export default defineConfig({
   
   // ✅ When deploying to GitHub Pages:
   // Replace <repo-name> with your actual repo name
-  base: '/alismitch-deploy/',
+  base: '/alismitch/',
 
   // 🌍 Custom domain setup (optional):
   // If you want to use a custom domain instead of GitHub Pages URL,
