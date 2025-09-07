@@ -36,5 +36,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: alismitch-website   # 🔹 Custom branch name
+          publish_branch: alismitch-deploy   # 🔹 Custom branch name
           publish_dir: ./dist
