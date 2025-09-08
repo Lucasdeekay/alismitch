@@ -12,6 +12,7 @@ import {
   X,
 } from "lucide-react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/next";
 
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
