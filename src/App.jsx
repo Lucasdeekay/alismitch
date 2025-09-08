@@ -33,6 +33,7 @@ export const App = () => {
 
   return (
     <Router basename="/alismitch">
+      <Analytics />
       <div className="bg-gray-50 font-sans text-gray-800 antialiased">
         {/* Sticky Navigation Bar */}
         <nav
