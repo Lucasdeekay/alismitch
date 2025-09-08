@@ -31,6 +31,9 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Add 404.html fallback
+        run: cp dist/index.html dist/404.html
+
       # 5. Deploy dist/ to alismitch-deploy branch
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
