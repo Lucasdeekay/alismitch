@@ -12,7 +12,7 @@ import {
   X,
 } from "lucide-react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/next";
+import { inject } from "@vercel/analytics";
 
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
@@ -31,9 +31,10 @@ export const App = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  inject();
+
   return (
     <Router basename="/alismitch">
-      <Analytics />
       <div className="bg-gray-50 font-sans text-gray-800 antialiased">
         {/* Sticky Navigation Bar */}
         <nav
