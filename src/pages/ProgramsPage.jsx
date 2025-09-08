@@ -1,3 +1,5 @@
+import { HeaderSection } from "../components/HeaderSection";
+import { ProgramDetailsCard } from "../components/ProgramDetailsCard";
 
 // Programs Page Component
 export const ProgramsPage = () => {
@@ -63,5 +65,3 @@ export const ProgramsPage = () => {
     </div>
   );
 };
-
-

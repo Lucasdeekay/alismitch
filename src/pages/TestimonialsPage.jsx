@@ -1,4 +1,7 @@
 
+import { HeaderSection } from "../components/HeaderSection";
+import { TestimonialCard } from "../components/TestimonialCard";
+
 // Testimonials Page Component
 export const TestimonialsPage = () => {
   const testimonials = [

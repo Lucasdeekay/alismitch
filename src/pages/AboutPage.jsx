@@ -1,3 +1,7 @@
+import { HeaderSection } from '../components/HeaderSection';
+import { SectionHeading } from "../components/SectionHeading";
+import { TeamMember } from "../components/TeamMember";
+
 // About Us Page Component
 export const AboutPage = () => {
   return (

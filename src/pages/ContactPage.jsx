@@ -1,8 +1,6 @@
-import {
-  Mail as MailIcon,
-  Phone,
-  Building,
-} from "lucide-react";
+import { HeaderSection } from "../components/HeaderSection";
+
+import { Mail as MailIcon, Phone, Building } from "lucide-react";
 import { useState } from "react";
 
 // Contact Page Component
