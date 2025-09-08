@@ -34,7 +34,7 @@ export const App = () => {
   inject();
 
   return (
-    <Router basename="/alismitch">
+    <Router basename="/">
       <div className="bg-gray-50 font-sans text-gray-800 antialiased">
         {/* Sticky Navigation Bar */}
         <nav
