@@ -104,7 +104,17 @@ export const App = () => {
 {/* Mobile Menu */}
 {isMobileMenuOpen && (
   <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm">
-    <div className="absolute top-0 right-0 h-full w-3/4 max-w-sm bg-white shadow-lg animate-slide-in">
+    <div className="absolute top-0 right-0 h-full w-1/2 max-w-sm bg-white shadow-lg animate-slide-in">
+      {/* Close Button */}
+      <div className="flex justify-end p-4">
+        <button
+          onClick={() => setIsMobileMenuOpen(false)}
+          className="text-gray-600 hover:text-red-500 text-2xl font-bold"
+          aria-label="Close menu"
+>
+          <X size={20} />
+        </button>
+      </div>
       <ul className="flex flex-col justify-center h-full px-6 py-12 space-y-8 text-lg font-medium text-gray-800">
         <li>
           <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition">
