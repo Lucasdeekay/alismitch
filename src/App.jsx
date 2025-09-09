@@ -98,41 +98,79 @@ export const App = () => {
           </div>
         </nav>
 
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="fixed top-0 right-0 h-screen w-1/2 bg-white/95 z-40">
-            <ul className="flex flex-col items-center justify-center space-y-6 text-xl h-full">
-              <li>
-                <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/programs" onClick={() => setIsMobileMenuOpen(false)}>
-                  Programs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/testimonials"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Testimonials
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        )}
+        
+      {/* Mobile Navigation Menu */}
+      <div
+        className={`fixed top-0 left-0 w-full h-screen bg-white/95 backdrop-blur-lg z-40 transition-transform duration-300 ease-in-out transform md:hidden ${
+          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <div className="flex justify-end p-6">
+          <button
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="text-gray-800"
+            aria-label="Close mobile menu"
+          >
+            <X size={32} />
+          </button>
+        </div>
+        <ul className="flex flex-col items-center justify-center space-y-6 text-xl h-full -mt-20">
+          <li>
+            <NavLink
+              page="home"
+              currentPage={currentPage}
+              onClick={handleNavigation}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              page="about"
+              currentPage={currentPage}
+              onClick={handleNavigation}
+            >
+              About Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              page="programs"
+              currentPage={currentPage}
+              onClick={handleNavigation}
+            >
+              Programs
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              page="testimonials"
+              currentPage={currentPage}
+              onClick={handleNavigation}
+            >
+              Testimonials
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              page="contact"
+              currentPage={currentPage}
+              onClick={handleNavigation}
+            >
+              Contact
+            </NavLink>
+          </li>
+          <li>
+            <button
+              onClick={() => handleNavigation("programs")}
+              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105"
+            >
+              Apply Now
+            </button>
+          </li>
+        </ul>
+      </div>
+
 
         {/* Main Content */}
         <main>
