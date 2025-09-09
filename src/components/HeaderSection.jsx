@@ -1,5 +1,11 @@
 export const HeaderSection = ({ title, subtitle, parallaxClass }) => (
   <header
+    style={{
+      backgroundImage: 'url("/class-bg.jpg")',
+      backgroundSize: "cover", // makes it fit the whole section
+      backgroundPosition: "center", // centers the image
+      backgroundRepeat: "no-repeat", // prevents tiling
+    }}
     className={`relative h-96 flex items-center justify-center text-center text-white parallax-bg ${parallaxClass} rounded-b-3xl`}
   >
     <div className="absolute inset-0 bg-black/50"></div>

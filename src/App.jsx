@@ -47,10 +47,10 @@ export const App = () => {
           <div className="container mx-auto px-6 flex justify-between items-center">
             <div className="flex items-center space-x-2">
               <img
-    src="/IMG_3569.png"
-    alt="Alismitch Global Logo"
-    className="w-10 h-10 object-contain"
-  />
+                src="/logo.png"
+                alt="Alismitch Global Logo"
+                className="w-10 h-10 object-contain"
+              />
               <span
                 className={`text-2xl font-bold transition-colors duration-300 ${
                   scrolled ? "text-blue-800" : "text-white text-shadow-custom"
@@ -62,27 +62,28 @@ export const App = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8 items-center">
-              <Link to="/" className="hover:text-blue-500">
+              <NavLink to="/" scrolled={scrolled}>
                 Home
-              </Link>
-              <Link to="/about" className="hover:text-blue-500">
+              </NavLink>
+              <NavLink to="/about" scrolled={scrolled}>
                 About Us
-              </Link>
-              <Link to="/programs" className="hover:text-blue-500">
+              </NavLink>
+              <NavLink to="/programs" scrolled={scrolled}>
                 Programs
-              </Link>
-              <Link to="/testimonials" className="hover:text-blue-500">
+              </NavLink>
+              <NavLink to="/testimonials" scrolled={scrolled}>
                 Testimonials
-              </Link>
-              <Link to="/contact" className="hover:text-blue-500">
+              </NavLink>
+              <NavLink to="/contact" scrolled={scrolled}>
                 Contact
-              </Link>
-              <Link
+              </NavLink>
+              <button
                 to="/programs"
+                scrolled={scrolled}
                 className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-full shadow-lg"
               >
                 Apply Now
-              </Link>
+              </button>
             </div>
 
             {/* Mobile Menu Toggle */}

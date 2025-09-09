@@ -1,28 +1,23 @@
 import React from "react";
+import { NavLink as RouterNavLink } from "react-router-dom";
 
-export const NavLink = ({ page, currentPage, onClick, scrolled, children }) => {
-  const isSelected = currentPage === page;
-
-  // Base classes for all states
-  const baseClasses =
-    "font-semibold px-3 py-1 rounded-md transition-all duration-300 bg-white/50";
-
-  // Active state classes
-  const activeClasses = "text-blue-600 shadow-sm";
-
-  // Inactive state classes based on scroll position
-  const inactiveClasses = scrolled
-    ? "text-blue-800 hover:text-blue-600" // Darker color for sticky white header
-    : "hover:text-blue-300"; // White for transparent hero header
-
+export const NavLink = ({ to, scrolled, children }) => {
   return (
-    <button
-      onClick={() => onClick(page)}
-      className={`${baseClasses} ${
-        isSelected ? activeClasses : inactiveClasses
-      }`}
+    <RouterNavLink
+      to={to}
+      className={({ isActive }) =>
+        `
+          font-semibold px-3 py-1 rounded-md transition-all duration-300 
+          ${isActive ? "text-blue-600 shadow-sm bg-white/50" : ""}
+          ${
+            scrolled
+              ? "text-black-800 hover:text-blue-600"
+              : "text-white hover:text-blue-300"
+          }
+        `
+      }
     >
       {children}
-    </button>
+    </RouterNavLink>
   );
 };

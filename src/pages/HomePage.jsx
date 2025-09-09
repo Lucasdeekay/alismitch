@@ -16,12 +16,15 @@ export const HomePage = () => {
   return (
     <div>
       {/* Hero Section with Parallax */}
-      <section className="relative h-screen flex items-center justify-center text-center text-white parallax-bg parallax-hero rounded-b-3xl"
+      <section
+        className="relative h-screen flex items-center justify-center text-center text-white parallax-bg parallax-hero rounded-b-3xl"
         style={{
-    backgroundImage:
-      "url('https://unsplash.com/photos/brown-concrete-building-under-blue-sky-during-daytime-1lmGTHdQdjM')",
-  }}
-        >
+          backgroundImage: 'url("/school-building.jpg")',
+          backgroundSize: "cover", // makes it fit the whole section
+          backgroundPosition: "center", // centers the image
+          backgroundRepeat: "no-repeat", // prevents tiling
+        }}
+      >
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="z-10 px-6 section-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-shadow-custom">
@@ -87,7 +90,7 @@ export const HomePage = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 section-fade-in">
           <div className="md:w-1/2">
             <img
-              src="https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-holding-green-tablet-computer-6c86TCPmNRQ"
+              src="/teacher-student.jpg"
               alt="Teacher with students abroad"
               className="w-full h-auto rounded-3xl shadow-xl transform transition-transform duration-500 hover:scale-105"
             />
