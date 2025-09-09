@@ -46,7 +46,11 @@ export const App = () => {
         >
           <div className="container mx-auto px-6 flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <Globe size={32} className="text-blue-600" />
+              <img
+    src="/IMG3265.jpg"
+    alt="Alismitch Global Logo"
+    className="w-10 h-10 object-contain"
+  />
               <span
                 className={`text-2xl font-bold transition-colors duration-300 ${
                   scrolled ? "text-blue-800" : "text-white text-shadow-custom"
