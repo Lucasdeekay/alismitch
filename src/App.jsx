@@ -100,79 +100,41 @@ export const App = () => {
 
         
       {/* Mobile Navigation Menu */}
-        {isMobileMenuOpen && (
-      <div
-        className={`fixed top-0 left-0 w-full h-screen bg-white/95 backdrop-blur-lg z-40 transition-transform duration-300 ease-in-out transform md:hidden ${
-          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
-      >
-        <div className="flex justify-end p-6">
-          <button
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="text-gray-800"
-            aria-label="Close mobile menu"
-          >
-            <X size={32} />
-          </button>
-        </div>
-        <ul className="flex flex-col items-center justify-center space-y-6 text-xl h-full -mt-20">
-          <li>
-            <NavLink
-              page="home"
-              currentPage={currentPage}
-              onClick={handleNavigation}
-            >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              page="about"
-              currentPage={currentPage}
-              onClick={handleNavigation}
-            >
-              About Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              page="programs"
-              currentPage={currentPage}
-              onClick={handleNavigation}
-            >
-              Programs
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              page="testimonials"
-              currentPage={currentPage}
-              onClick={handleNavigation}
-            >
-              Testimonials
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              page="contact"
-              currentPage={currentPage}
-              onClick={handleNavigation}
-            >
-              Contact
-            </NavLink>
-          </li>
-          <li>
-            <button
-              onClick={() => handleNavigation("programs")}
-              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105"
-            >
-              Apply Now
-            </button>
-          </li>
-        </ul>
-      </div>
-      )}
-
+      
+{/* Mobile Menu */}
+{isMobileMenuOpen && (
+  <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm">
+    <div className="absolute top-0 right-0 h-full w-3/4 max-w-sm bg-white shadow-lg animate-slide-in">
+      <ul className="flex flex-col justify-center h-full px-6 py-12 space-y-8 text-lg font-medium text-gray-800">
+        <li>
+          <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition">
+            About Us
+          </Link>
+        </li>
+        <li>
+          <Link to="/programs" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition">
+            Programs
+          </Link>
+        </li>
+        <li>
+          <Link to="/testimonials" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition">
+            Testimonials
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition">
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+)}
 
         {/* Main Content */}
         <main>
