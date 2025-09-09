@@ -90,7 +90,7 @@ export const App = () => {
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={scrolled ? "text-gray-800" : "text-white"}
+                className="text-gray-800"
               >
                 {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
               </button>
