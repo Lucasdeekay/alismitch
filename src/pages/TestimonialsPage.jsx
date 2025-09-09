@@ -11,7 +11,7 @@ export const TestimonialsPage = () => {
       quote:
         "Studying abroad with Alismitch Global Services UK opened my eyes to new cultures and gave me confidence for the future. The support from the team was incredible.",
       image:
-        "https://images.unsplash.com/photo-1549417215-d5c417931398?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1564521107069-ce2aa813939d?q=80&w=1342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       name: "Mr. James",
@@ -19,7 +19,7 @@ export const TestimonialsPage = () => {
       quote:
         "Accompanying my students was life-changing. I grew alongside them, and the experience broadened my professional and personal horizons in ways I never imagined.",
       image:
-        "https://images.unsplash.com/photo-1531123414780-f75f76531d04?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1608391957733-08caeb461b57?q=80&w=1555&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       name: "Aisha T.",
@@ -27,7 +27,7 @@ export const TestimonialsPage = () => {
       quote:
         "The language immersion program was fantastic. My fluency improved so much faster than I ever thought possible, and I made lifelong friends.",
       image:
-        "https://images.unsplash.com/photo-1554126802-959c2357d60a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1634451784126-b9f7282edb1b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 

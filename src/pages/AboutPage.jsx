@@ -35,7 +35,7 @@ export const AboutPage = () => {
           </div>
           <div>
             <img
-              src="/student-playing.jpg"
+              src="https://images.unsplash.com/photo-1565425518476-3229123699c5?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Students in a cultural setting"
               className="w-full h-auto rounded-3xl shadow-xl transform transition-transform duration-500 hover:scale-105"
             />
@@ -43,7 +43,16 @@ export const AboutPage = () => {
         </div>
       </section>
 
-      <section className="py-24 px-6 relative overflow-hidden text-center text-white parallax-bg parallax-map rounded-3xl">
+      <section
+        className="py-24 px-6 relative overflow-hidden text-center text-white parallax-bg parallax-map rounded-3xl"
+        style={{
+          backgroundImage:
+            'url("https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+          backgroundSize: "cover", // makes it fit the whole section
+          backgroundPosition: "center", // centers the image
+          backgroundRepeat: "no-repeat", // prevents tiling
+        }}
+      >
         <div className="absolute inset-0 bg-blue-900/60"></div>
         <div className="relative z-10 container mx-auto section-fade-in">
           <h2 className="text-4xl font-bold mb-4">Our Journey Through Time</h2>
@@ -76,7 +85,7 @@ export const AboutPage = () => {
         </div>
       </section>
 
-      <section className="container mx-auto py-16 px-6">
+      {/* <section className="container mx-auto py-16 px-6">
         <SectionHeading
           title="Meet Our Leadership"
           subtitle="Our dedicated team is here to guide you every step of the way."
@@ -103,7 +112,7 @@ export const AboutPage = () => {
             imageUrl="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
