@@ -47,7 +47,7 @@ export const App = () => {
           <div className="container mx-auto px-6 flex justify-between items-center">
             <div className="flex items-center space-x-2">
               <img
-    src="/IMG3265.jpg"
+    src="/IMG_3569.png"
     alt="Alismitch Global Logo"
     className="w-10 h-10 object-contain"
   />
