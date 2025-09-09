@@ -100,6 +100,7 @@ export const App = () => {
 
         
       {/* Mobile Navigation Menu */}
+        {isMobileMenuOpen && (
       <div
         className={`fixed top-0 left-0 w-full h-screen bg-white/95 backdrop-blur-lg z-40 transition-transform duration-300 ease-in-out transform md:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
@@ -170,6 +171,7 @@ export const App = () => {
           </li>
         </ul>
       </div>
+      )}
 
 
         {/* Main Content */}
