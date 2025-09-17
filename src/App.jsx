@@ -11,6 +11,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import { NavLink as RouterNavLink } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { inject } from "@vercel/analytics";
 
@@ -20,6 +21,7 @@ import { ProgramsPage } from "./pages/ProgramsPage";
 import { TestimonialsPage } from "./pages/TestimonialsPage";
 import { ContactPage } from "./pages/ContactPage";
 import { NavLink } from "./components/NavLink";
+import { ApplicationPage } from "./pages/ApplicationPage";
 
 export const App = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -77,13 +79,13 @@ export const App = () => {
               <NavLink to="/contact" scrolled={scrolled}>
                 Contact
               </NavLink>
-              <button
-                to="/programs"
+              <RouterNavLink
+                to="/application"
                 scrolled={scrolled}
                 className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-full shadow-lg"
               >
                 Apply Now
-              </button>
+              </RouterNavLink>
             </div>
 
             {/* Mobile Menu Toggle */}
@@ -98,53 +100,72 @@ export const App = () => {
           </div>
         </nav>
 
-        
-      {/* Mobile Navigation Menu */}
-      
-{/* Mobile Menu */}
-{isMobileMenuOpen && (
-  <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm">
-    <div className="absolute top-0 right-0 h-full w-1/2 max-w-sm bg-white shadow-lg animate-slide-in">
-      {/* Close Button */}
-      <div className="flex justify-end p-4">
-        <button
-          onClick={() => setIsMobileMenuOpen(false)}
-          className="text-gray-600 hover:text-red-500 text-2xl font-bold"
-          aria-label="Close menu"
->
-          <X size={20} />
-        </button>
-      </div>
-      <ul className="flex flex-col justify-center h-full px-6 py-12 space-y-8 text-lg font-medium text-gray-800">
-        <li>
-          <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition">
-            About Us
-          </Link>
-        </li>
-        <li>
-          <Link to="/programs" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition">
-            Programs
-          </Link>
-        </li>
-        <li>
-          <Link to="/testimonials" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition">
-            Testimonials
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition">
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </div>
-  </div>
-)}
+        {/* Mobile Navigation Menu */}
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm">
+            <div className="absolute top-0 right-0 h-full w-1/2 max-w-sm bg-white shadow-lg animate-slide-in">
+              {/* Close Button */}
+              <div className="flex justify-end p-4">
+                <button
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-gray-600 hover:text-red-500 text-2xl font-bold"
+                  aria-label="Close menu"
+                >
+                  <X size={20} />
+                </button>
+              </div>
+              <ul className="flex flex-col justify-center h-full px-6 py-12 space-y-8 text-lg font-medium text-gray-800">
+                <li>
+                  <Link
+                    to="/"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="hover:text-blue-600 transition"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="hover:text-blue-600 transition"
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/programs"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="hover:text-blue-600 transition"
+                  >
+                    Programs
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/testimonials"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="hover:text-blue-600 transition"
+                  >
+                    Testimonials
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/contact"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="hover:text-blue-600 transition"
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        )}
 
         {/* Main Content */}
         <main>
@@ -154,6 +175,7 @@ export const App = () => {
             <Route path="/programs" element={<ProgramsPage />} />
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/application" element={<ApplicationPage />} />
           </Routes>
         </main>
 

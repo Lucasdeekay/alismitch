@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { SectionHeading } from "../components/SectionHeading";
 import { ProgramCard } from "../components/ProgramCard";
+import { NavLink as RouterNavLink } from "react-router-dom";
 
 // Home Page Component
 export const HomePage = () => {
@@ -36,12 +37,18 @@ export const HomePage = () => {
             opportunities.
           </p>
           <div className="mt-8 flex justify-center space-x-4">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full transition-transform duration-300 transform hover:scale-105 shadow-lg">
+            <RouterNavLink
+              to="/application"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full transition-transform duration-300 transform hover:scale-105 shadow-lg"
+            >
               Apply Now
-            </button>
-            <button className="bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-8 rounded-full border border-white transition-transform duration-300 transform hover:scale-105 backdrop-blur-sm">
+            </RouterNavLink>
+            <RouterNavLink
+              to="/application"
+              className="bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-8 rounded-full border border-white transition-transform duration-300 transform hover:scale-105 backdrop-blur-sm"
+            >
               Learn More
-            </button>
+            </RouterNavLink>
           </div>
         </div>
       </section>
