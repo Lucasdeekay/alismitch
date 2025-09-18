@@ -151,7 +151,7 @@ export const ContactPage = () => {
                   />
                   <div>
                     <span className="font-semibold block">Office:</span>
-                    <span>London, UK</span>
+                    <span>Derby, Midlands, UK</span>
                   </div>
                 </div>
               </div>
