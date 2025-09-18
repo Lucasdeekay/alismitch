@@ -29,7 +29,7 @@ export const AboutPage = () => {
               <p className="text-gray-700 leading-relaxed">
                 We are proud to be the official facilitating agent of Newcastle
                 Fire Academy in the West Africa region, connecting individuals
-                and organizations to world-class fire rescue and safety
+                and organisations to world-class fire rescue and safety
                 training. However, our expertise does not stop there; From
                 specialized skills development to university admissions in the
                 UK, we provide tailored solutions that empower individuals and
