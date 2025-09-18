@@ -105,7 +105,7 @@ export const HomePage = () => {
           </div>
           <div className="md:w-1/2">
             <h2 className="text-4xl font-bold text-blue-800 mb-4">
-              Opportunities for Teachers
+              Opportunities for Professional Staffs/Teachers
             </h2>
             <p className="text-gray-600 mb-6">
               Empower your students and yourself through our professional Staff/Teacher Exchange
