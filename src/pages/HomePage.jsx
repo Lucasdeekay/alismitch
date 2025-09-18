@@ -108,7 +108,7 @@ export const HomePage = () => {
               Opportunities for Teachers
             </h2>
             <p className="text-gray-600 mb-6">
-              Empower your students and yourself through our Teacher Exchange
+              Empower your students and yourself through our professional Staff/Teacher Exchange
               Program. You'll lead trips, provide mentorship, and travel to new
               countries, enriching your professional and personal life.
             </p>
