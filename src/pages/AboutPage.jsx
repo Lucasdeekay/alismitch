@@ -44,7 +44,14 @@ export const AboutPage = () => {
               />
             </div>
           </div>
-          <div className="py-20 px-6 relative overflow-hidden text-center text-white parallax-bg parallax-map rounded-3xl mt-16">
+          <div className="py-20 px-6 relative overflow-hidden text-center text-white parallax-bg parallax-map rounded-3xl mt-16"
+            style={{
+          backgroundImage:
+            'url("https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+          backgroundSize: "cover", // makes it fit the whole section
+          backgroundPosition: "center", // centers the image
+          backgroundRepeat: "no-repeat", // prevents tiling
+        }}>
             <div className="absolute inset-0 bg-blue-900/60"></div>
             <div className="relative z-10 container mx-auto section-fade-in">
               <h2 className="text-4xl font-bold mb-4">Our Vision & Mission</h2>
