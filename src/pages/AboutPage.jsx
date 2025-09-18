@@ -8,7 +8,7 @@ export const AboutPage = () => {
     <div>
       <HeaderSection
         title="Our Story"
-        subtitle="Opening Global Doors for ALL Minds"
+        subtitle="Opening Global Doors for All Minds"
         parallaxClass="parallax-contact"
       />
       <section className="py-20 px-6 section-fade-in bg-white">
