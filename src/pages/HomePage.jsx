@@ -144,7 +144,7 @@ export const HomePage = () => {
           />
           <ProgramCard
             icon={<Users size={48} className="text-green-500" />}
-            title="Teacher Exchange"
+            title="Professional Staff/Teacher Exchange"
             description="Opportunities for educators to lead trips and gain international experience."
           />
           <ProgramCard
