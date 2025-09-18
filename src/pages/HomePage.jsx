@@ -98,7 +98,7 @@ export const HomePage = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 section-fade-in">
           <div className="md:w-1/2">
             <img
-              src="https://images.unsplash.com/photo-1589206946274-929e4da3996b?q=80&w=1498&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1573496774379-b930dba17d8b?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Teacher with students abroad"
               className="w-full h-auto rounded-3xl shadow-xl transform transition-transform duration-500 hover:scale-105"
             />
