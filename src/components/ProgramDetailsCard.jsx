@@ -8,9 +8,9 @@ export const ProgramDetailsCard = ({ title, description, image }) => (
     <div className="p-8 lg:w-1/2 flex flex-col justify-center">
       <h3 className="text-3xl font-bold text-blue-800 mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
-      <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full self-start transition-transform duration-300 transform hover:scale-105 shadow-lg">
+      <a href="mailto:info@alismitchglobal.co.uk" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full self-start transition-transform duration-300 transform hover:scale-105 shadow-lg">
         Apply Now
-      </button>
+      </a>
     </div>
   </div>
 );
