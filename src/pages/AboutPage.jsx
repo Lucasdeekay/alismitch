@@ -33,7 +33,7 @@ export const AboutPage = () => {
                 training. However, our expertise does not stop there; From
                 specialized skills development to university admissions in the
                 UK, we provide tailored solutions that empower individuals and
-                organizations to achieve their goals.
+                organisations to achieve their goals.
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
@@ -62,7 +62,7 @@ export const AboutPage = () => {
                   </h3>
                   <p className="mt-2 text-sm">
                     To be a trusted bridge between the United Kingdom and West
-                    Africa, empowering individuals and organizations through
+                    Africa, empowering individuals and organisations through
                     world-class training, education, and human capital
                     development that drives global opportunities and sustainable
                     growth.
