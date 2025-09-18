@@ -12,7 +12,7 @@ export const ProgramsPage = () => {
         "https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Teacher Exchange",
+      title: "Professional Staff/Teacher Exchange",
       description:
         "Opportunities for educators to lead trips, mentor students, and gain international teaching experience.",
       image:
