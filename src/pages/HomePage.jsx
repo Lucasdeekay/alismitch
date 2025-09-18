@@ -30,7 +30,7 @@ export const HomePage = () => {
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="z-10 px-6 section-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-shadow-custom">
-            Alismitch Global Services UK — Opening Global Doors for Young Minds
+            Alismitch Global Services UK — Opening Global Doors for All Minds
           </h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-shadow-custom">
             We connect students and teachers with life-changing study abroad
