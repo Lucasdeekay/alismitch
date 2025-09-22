@@ -113,7 +113,7 @@ export const ApplicationPage = () => {
             The first step is to send us an email stating your interest. We will then guide you through the next steps.
           </p>
           <a
-            href="mailto:info@alismitchglobal.co.uk"
+            href="mailto:support@alismitch.com"
             className="bg-white text-blue-600 font-semibold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105 inline-flex items-center space-x-2"
           >
             <MailIcon size={20} />

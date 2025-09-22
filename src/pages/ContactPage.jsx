@@ -131,7 +131,7 @@ export const ContactPage = () => {
                   />
                   <div>
                     <span className="font-semibold block">Email:</span>
-                    <span>info@alismitchglobal.co.uk</span>
+                    <span>support@alismitch.com</span>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -141,7 +141,7 @@ export const ContactPage = () => {
                   />
                   <div>
                     <span className="font-semibold block">Phone:</span>
-                    <span>+44 1234 567890</span>
+                    <span>+44 7944 853988</span>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -151,7 +151,7 @@ export const ContactPage = () => {
                   />
                   <div>
                     <span className="font-semibold block">Office:</span>
-                    <span>Derby, Midlands, UK</span>
+                    <span>Derby, UK</span>
                   </div>
                 </div>
               </div>

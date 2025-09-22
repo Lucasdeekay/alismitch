@@ -208,13 +208,13 @@ export const App = () => {
                 Contact Us
               </h3>
               <p className="flex items-center space-x-2">
-                <MailIcon size={16} /> info@alismitchglobal.co.uk
+                <MailIcon size={16} /> support@alismitch.com
               </p>
               <p className="flex items-center space-x-2">
-                <Phone size={16} /> +44 1234 567890
+                <Phone size={16} /> +44 7944 853988
               </p>
               <p className="flex items-center space-x-2">
-                <MapPin size={16} /> London, UK
+                <MapPin size={16} /> Derby, UK
               </p>
             </div>
             {/* Socials */}

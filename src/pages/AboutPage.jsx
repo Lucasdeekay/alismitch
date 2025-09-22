@@ -74,7 +74,7 @@ export const AboutPage = () => {
                   </h3>
                   <ul className="mt-2 text-sm text-left space-y-2 list-disc list-inside">
                     <li>
-                      Facilitating access to globally recognized fire, safety,
+                      Facilitating access to globally recognised fire, safety,
                       and rescue training.
                     </li>
                     <li>
