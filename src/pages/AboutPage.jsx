@@ -31,7 +31,7 @@ export const AboutPage = () => {
                 Fire Academy in the West Africa region, connecting individuals
                 and organisations to world-class fire rescue and safety
                 training. However, our expertise does not stop there; From
-                specialized skills development to university admissions in the
+                specialised skills development to university admissions in the
                 UK, we provide tailored solutions that empower individuals and
                 organisations to achieve their goals.
               </p>
